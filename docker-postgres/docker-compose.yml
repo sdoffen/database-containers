@@ -1,0 +1,16 @@
+name: 'docker-example-postgres'
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres_server
+    environment:
+      POSTGRES_DB: my_database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: userpassword
+    volumes:
+      - ./sql-volume:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
