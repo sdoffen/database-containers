@@ -12,11 +12,11 @@ To change the initial setup of the database, edit the [init.sql](./init-db/init.
 
 To connect to the MySQL server using a client application like [DBeaver](https://dbeaver.io/), you will need to enter values from the `services.mysql.environment` section of the [`docker-compose`](./docker-compose.yml) file. If you didn't make any changes, then the default values below will work for you.
 
-| Name                | Default Value |
-|---------------------|---------------|
-| MYSQL_DATABASE      | my_database   |
-| MYSQL_USER          | user          |
-| MYSQL_PASSWORD      | userpassword  |
+| Name                | Default Value     |
+|---------------------|-------------------|
+| MYSQL_DATABASE      | my_database       |
+| MYSQL_USER          | user              |
+| MYSQL_PASSWORD      | StrongPassword123 |
 
 You will also need the `port` value, which defaults to `3306`.
 

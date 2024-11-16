@@ -7,7 +7,7 @@ services:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: my_database
       MYSQL_USER: user
-      MYSQL_PASSWORD: userpassword
+      MYSQL_PASSWORD: StrongPassword123
     volumes:
       - ./sql-volume:/var/lib/mysql
       - ./init-db:/docker-entrypoint-initdb.d
