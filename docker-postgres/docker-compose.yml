@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_DB: my_database
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: userpassword
+      POSTGRES_PASSWORD: StrongPassword123
     volumes:
       - ./sql-volume:/var/lib/postgresql/data
       - ./init-db:/docker-entrypoint-initdb.d

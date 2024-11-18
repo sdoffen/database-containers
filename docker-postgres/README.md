@@ -10,13 +10,13 @@ To change the initial setup of the database, edit the [init.sql](./init-db/init.
 
 ## Connecting using DBeaver
 
-To connect to the PostgreSQL server using a client application like [DBeaver](https://dbeaver.io/), you will need to enter values from the `services.postgree.environment` section of the [`docker-compose`](./docker-compose.yml) file. If you didn't make any changes, then the default values below will work for you.
+To connect to the PostgreSQL server using a client application like [DBeaver](https://dbeaver.io/), you will need to enter values from the `services.postgres.environment` section of the [`docker-compose`](./docker-compose.yml) file. If you didn't make any changes, then the default values below will work for you.
 
-| Name                | Default Value |
-|---------------------|---------------|
-| POSTGRES_DB         | my_database   |
-| POSTGRES_USER       | postgres      |
-| POSTGRES_PASSWORD   | userpassword  |
+| Name                | Default Value     |
+|---------------------|-------------------|
+| POSTGRES_DB         | my_database       |
+| POSTGRES_USER       | postgres          |
+| POSTGRES_PASSWORD   | StrongPassword123 |
 
 You will also need the `port` value, which defaults to `5432`.
 
