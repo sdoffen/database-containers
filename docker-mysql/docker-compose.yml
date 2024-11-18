@@ -1,4 +1,4 @@
-name: 'docker-example-mysql'
+name: 'dex-mysql'
 services:
   mysql:
     image: mysql:8.0
