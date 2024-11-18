@@ -1,4 +1,4 @@
-name: 'docker-example-postgres'
+name: 'dex-postgres'
 services:
   postgres:
     image: postgres:latest
